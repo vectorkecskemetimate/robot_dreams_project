@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ACME Inc. - Kapcsolat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a class="homa-page-link" href="index.html">ACME Inc.</a>
+        <div>
+            <a href="ceginformacio.html">Céginformáció</a>
+            <a href="szolgaltatasok.html" >Szolgáltatásaink</a>
+            <a href="kapcsolat.html" class="selected">Kapcsolat</a>
+        </div>
+    </nav>
+
+    <h1 class="contact-title">Kapcsolat</h1>
+
+    <div class="container">
+        <main class="contact">
+            <div class="description">
+                <section>
+                    <h2>Alapítás éve:</h2> <span>2000</span>
+                </section>
+
+                <section>
+                    <h2>Ágaza:</h2> <span> Technológia és szolgáltatások</span>
+                </section>
+
+                <section>
+                    <h2>Cégprofil:</h2> Az ACME Inc. egy vezető technológiai és szolgáltató vállalat, amely
+                    innovatív megoldásokat kínál ügyfeleinek szerte a világon. Célunk, hogy a legmagasabb színvonalú
+                    termékeket és szolgáltatásokat nyújtsuk, amelyek segítik ügyfeleinket a hatékonyság növelésében és a
+                    versenyelőny megszerzésében.
+                </section>
+
+                <section>
+                    <h2>Termékek és szolgáltatások:</h2>
+                    <ul>
+                        <li>Szoftverfejlesztés és testreszabás</li>
+                        <li>Adatkezelés és elemzés</li>
+                        <li>Cloud alapú megoldások</li>
+                        <li>Biztonsági rendszerek és tanácsadás</li>
+                        <li>Ügyfélkapcsolat-kezelés (CRM) rendszerek</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ügyfélközpontúság:</h2> Az ACME Inc. kiemelkedően fontosnak tartja ügyfelei elégedettségét
+                    és elégedettségüket. Ügyfélorientált szemléletünkkel és a legjobb ügyfélszolgálati gyakorlatok
+                    alkalmazásával biztosítjuk, hogy ügyfeleink mindig a legjobb szolgáltatásokat kapják tőlünk.
+                </section>
+
+                <section>
+                    <h2>Kapcsolat:</h2>
+                    <p><span>Weboldal: </span><a href="www.acmeinc.com"> www.acmeinc.com </a></p>
+                    <p><span>Telefon:</span> <a href="tel:+36123456789" class="telefon"> +36 123 456 789 </a></p>
+                    <p><span>E-mail: </span> <a href="mailto:info@acmeinc.com "> info@acmeinc.com </a></p>
+                </section>
+
+            </div>
+
+            <img id="map" src="/assets/image/map.png" alt="Map">
+
+        </main>
+    </div>
+
+
+    <div class="contact-box">
+        <div class="container">
+            <form class="contact-form" name="contact-form">
+                <div class="datas">
+                    <div class="group1">
+                        <div class="form-group">
+                            <label for="nev">Név</label>
+                            <input type="text" name="nev" id="nev"  class="form-control" maxlength="200" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail cím</label>
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefon">Telefonszám</label>
+                            <input type="tel" name="telefon" id="telefon"  class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="group2">
+                        <div class="form-group">
+                            <label for="uzenet">Üzenet</label>
+                            <textarea name="uzenet" id="uzenet" rows="8"  class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="group3">
+                        <button class="form-send" type="submit">Küldés</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer><span>ACME</span></footer>
+
+</body>
+</html>
