@@ -92,7 +92,7 @@ h2 {
 
 nav.menu {
     display: flex;
-    padding: 15px 32px;
+    padding: 0px 32px;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
@@ -111,6 +111,7 @@ nav.menu > div {
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
+    padding: 26px 0;
 }
 
 nav.menu > div > a {
@@ -130,7 +131,6 @@ nav.menu > div > a {
 }
 
 @media screen and (max-width: 640px) {
-
     nav.menu {
         padding: 8px 24px;
     }
@@ -139,6 +139,7 @@ nav.menu > div > a {
         flex-direction: column;
         align-items: flex-end;
         gap: 8px;
+        padding: 0;
     }
 
     nav.menu > a.homa-page-link  {
@@ -150,20 +151,11 @@ nav.menu > div > a {
         letter-spacing: 2px;
     }
 
-
-
     nav.menu > div > a {
         font-family: Roboto-Thin;
         font-weight: 100;
     }
 }
-
-
-
-
-
-
-
 
 nav.menu > div > a.selected {
     font-weight: 700;
@@ -177,8 +169,6 @@ h1 {
     margin: 71px 0 50px 0;
     text-align: center;
 }
-
-
 
 /* main-page */
 body.main {
@@ -201,7 +191,8 @@ div.main-page .company-name {
     line-height: 75px;
     letter-spacing: 15px;
     text-align: left;
-    padding: 0 50px 0 0;
+    padding: 0 40px 0 0;
+    margin-left: 15px;
 }
 
 div.main-page nav {
@@ -217,7 +208,7 @@ div.main-page nav a {
     line-height: 63px;
     letter-spacing: 0px;
     text-align: left;
-    text-decoration: none;21215;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -296,7 +287,7 @@ main.contact section p {
 }
 
 main.contact section:not(:first-child) {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 main.contact section:last-child {
@@ -316,7 +307,7 @@ main.contact section a.telefon {
 }
 
 main.contact .description {
-    width: 702px;  /* TODO */
+    width: 702px;
     flex-shrink: 0;
 }
 
@@ -324,7 +315,8 @@ main.contact #map {
     flex-shrink: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1240px) {
+
     .contact-title {
         padding: 32px;
         margin: 0;
@@ -345,6 +337,8 @@ main.contact #map {
 
     main.contact #map {
         align-self: stretch;
+        object-fit: cover;
+        height: 400px;
     }
 }
 
@@ -379,7 +373,6 @@ main.contact #map {
 
 .contact-box .datas .group1 .form-group {
     width: 360px;
-
 }
 
 .contact-box .datas .group1 input {
@@ -398,7 +391,6 @@ main.contact #map {
     background: #888;
 }
 
-
 .contact-box .datas .group2 {
     align-self: stretch;
 }
@@ -406,6 +398,7 @@ main.contact #map {
 .contact-box .button {
     width: 100%;
 }
+
 .contact-box .form-send{
     display: flex;
     float: right;
@@ -429,7 +422,6 @@ main.contact #map {
 @media screen and (max-width: 800px) {
     .contact-box {
         padding: 32px;
-
     }
 
     .contact-box .datas .group1 {
@@ -447,8 +439,6 @@ main.contact #map {
     .contact-box .datas .group2 textarea {
         width: calc(100% - 8px);
     }
-
-
 
     .contact-box .datas .group1 .form-group {
         width: 300px;
@@ -472,8 +462,6 @@ main.contact #map {
 }
 
 
-
-
 /* Services page */
 
 h1.services-title{
@@ -488,7 +476,7 @@ h1.services-title{
     row-gap: 50px;
     flex-shrink: 0;
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .service-list section {
@@ -513,20 +501,13 @@ h1.services-title{
         justify-content: center;
         gap: 64px 50px;
     }
-
-
-
-
 }
-
-
 
 
 /* Company information */
 
-
 .pc-main-box {
-    margin: 80px 0;
+    margin: 70px 0 80px 0;
     position: relative;
 }
 
@@ -567,8 +548,6 @@ h1.services-title{
     line-height: normal;
     text-decoration-line: underline;
 }
-
-
 
 h2.introduction-title {
     font-size: 40px;
@@ -618,11 +597,6 @@ h2.introduction-title {
     }
 }
 
-
-
-
-
-
 section.feedbacks  {
     background: #000000;
     color: #FFFFFF;
@@ -653,9 +627,11 @@ section.feedbacks > .list > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     align-self: stretch;
     justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 section.feedbacks > .list > div > .image {
@@ -676,7 +652,6 @@ section.feedbacks > .list > div > #profile3 {
     background: url(assets/image/profile-3.png), lightgray 50% / cover no-repeat;
 }
 
-
 section.feedbacks > .list > div > .description {
     color: #EEEEF0;
     font-size: 30px;
@@ -684,7 +659,6 @@ section.feedbacks > .list > div > .description {
     font-weight: 400;
     line-height: normal;
 }
-
 
 section.feedbacks > .list > div > .feedback-detail {
     color: #D166FF;
@@ -719,8 +693,13 @@ section.company-description {
         align-self: stretch;
     }
 
+    section.feedbacks > .list > div {
+        gap: 50px;
+    }
+
     section.company-description {
         padding: 32px;
+        font-size: 18px;
     }
 
     section.feedbacks > .list > div > .description {
@@ -730,12 +709,9 @@ section.company-description {
     h2.introduction-title {
         padding: 0px 0 8px 0;
     }
-
-
 }
 
-
-
+/* Dark mode */
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -749,6 +725,13 @@ section.company-description {
 
     div.main-page nav {
         border-left: 1px solid #FFF;
+    }
+
+    @media screen and (max-width: 1000px) {
+        div.main-page nav{
+            border-left: 0;
+            border-top: 1px solid #FFF;
+        }
     }
 
     nav.menu {
@@ -786,5 +769,4 @@ section.company-description {
     .contact-box label {
         color: #000;
     }
-
 }
